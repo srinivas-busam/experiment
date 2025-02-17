@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var obj={
+            name:"srinivas",
+            roll:12,
+            add:function()
+            {
+                console.log(this)
+            },
+            ob:
+            {
+                bk:"ruby"
+            }
+        }
+        console.log(this)
+        console.log(obj.ob.bk)
+        obj.add()
+        a=[333,8,44,45]
+        console.log(typeof(obj))
+        var d=JSON.stringify(a)
+        console.log(d)
+        console.log(typeof(d))
+        var f=JSON.parse(d)
+        console.log(typeof(f))
+
+    </script>
+</body>
+</html>
